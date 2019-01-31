@@ -1,18 +1,26 @@
+import { UI } from './ui.js'
+import { Transactions } from './transactions.js'
+
+// App Controller
+const App = (function (UI, Transactions) {
+
+  // Load Event listeners
+  const loadEventListeners = function () {
+    // Get UI Selectors
+    // const UISelectors = UI.getSelectors();
+
+  }
+
+  return {
+    init: function () {
+      // Initialize Materialize components
+      UI.initMaterialize()
+
+      loadEventListeners()
+    }
+  }
+})(UI, Transactions)
+
 document.addEventListener('DOMContentLoaded', function () {
-  // Init Date  picker
-  var elems = document.querySelectorAll('.datepicker');
-  var instances = M.Datepicker.init(elems, {});
-
-  // Init Collapser
-  var elems = document.querySelectorAll('.collapsible');
-  var instances = M.Collapsible.init(elems, {});
-
-  //Init Category dropdown menu
-  var elems = document.querySelectorAll('.dropdown-trigger');
-  var instances = M.Dropdown.init(elems, {});
-
-  //Init Add Category modal
-  var elems = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(elems, {});
-
+  App.init();
 });

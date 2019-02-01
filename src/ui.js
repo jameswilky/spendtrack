@@ -1,19 +1,31 @@
-
-
 // UI Controller
-export const UI = (function () {
+export const UICtrl = (function () {
   const UISelectors = {
     datepicker: '.datepicker',
     collapsible: '.collapsible',
     dropdownTrigger: '.dropdown-trigger',
-    modal: '.modal'
+    modal: '.modal',
+    addBtn: '.add-btn',
+    transactionNameInput: '#transaction-name',
+    // transactionCategoryInput: '#transaction-category',
+    transactionCostInput: '#transaction-cost',
+    transactionDateInput: '#transaction-date',
   }
 
   return {
     initMaterialize: function () {
       // Init Datepicker
-      const datepickerElements = document.querySelectorAll(UISelectors.datepicker)
-      M.Datepicker.init(datepickerElements, {});
+      const datepickerElement = document.querySelector(UISelectors.datepicker)
+      const datepickerInstance = M.Datepicker.init(datepickerElement,
+        {
+          format: 'dd/mm/yy',
+          // defaultDate: new Date(),
+          // setDefaultDate: true
+        });
+
+      // Get first Date picker instance and set date to todays date by default
+      datepickerInstance.setDate(new Date())
+      console.log(datepickerInstance)
 
       // Init Collapser
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
@@ -26,8 +38,21 @@ export const UI = (function () {
       //Init Add Category modal
       const modalElements = document.querySelectorAll(UISelectors.modal);
       M.Modal.init(modalElements, {});
+    },
+    // Get information from form
+    getTransactionInput: function () {
+      return {
+        name: document.querySelector(UISelectors.transactionNameInput).value,
+        // category: document.querySelector(UISelectors.transactionNameInput),
+        cost: document.querySelector(UISelectors.transactionCostInput).value,
+        date: document.querySelector(UISelectors.transactionDateInput).value,
+      }
+    },
 
+    getSelectors: function () {
+      return UISelectors
     }
+
   }
 })();
 

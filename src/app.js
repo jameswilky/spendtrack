@@ -22,6 +22,8 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
+
+    // Add transaction to UI
     e.preventDefault();
   }
 
@@ -33,7 +35,7 @@ const App = (function (UICtrl, TransactionCtrl) {
       UICtrl.initMaterialize()
 
       loadEventListeners()
-      console.log(TransactionCtrl, UICtrl)
+      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl)
     },
 
 
@@ -41,6 +43,6 @@ const App = (function (UICtrl, TransactionCtrl) {
 })(UICtrl, TransactionCtrl)
 
 document.addEventListener('DOMContentLoaded', function () {
+  App.init();
 });
-App.init();
-let x = 5
+

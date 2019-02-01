@@ -16,7 +16,7 @@ export const UICtrl = (function () {
     initMaterialize: function () {
       // Init Datepicker
       const datepickerElement = document.querySelector(UISelectors.datepicker)
-      const datepickerInstance = M.Datepicker.init(datepickerElement,
+      M.Datepicker.init(datepickerElement,
         {
           format: 'dd/mm/yy',
           // defaultDate: new Date(),
@@ -24,8 +24,7 @@ export const UICtrl = (function () {
         });
 
       // Get first Date picker instance and set date to todays date by default
-      datepickerInstance.setDate(new Date())
-      console.log(datepickerInstance)
+      console.log(datepickerElement.placeholder = new Date(Date.now()).toLocaleDateString())
 
       // Init Collapser
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);

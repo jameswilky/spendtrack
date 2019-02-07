@@ -43,7 +43,6 @@ export const TransactionCtrl = (function () {
     },
     addTransaction: function (transaction) {
       const ID = this.generateID()
-      console.log(transaction.date)
 
       // Create New Transaction
       const newTransaction = new Transaction(ID, transaction.name, transaction.category, transaction.cost, transaction.date)

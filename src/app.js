@@ -18,12 +18,16 @@ const App = (function (UICtrl, TransactionCtrl) {
   // Add transaction submit
   const transactionAddSubmit = function (e) {
     const input = UICtrl.getTransactionInput();
-    console.log(input)
 
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
+    console.log(newTransaction)
+
+
+    // Add Transaction to storage
 
     // Add transaction to UI
+
     e.preventDefault();
   }
 

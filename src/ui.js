@@ -7,7 +7,7 @@ export const UICtrl = (function () {
     modal: '.modal',
     addBtn: '.add-btn',
     transactionNameInput: '#transaction-name',
-    // transactionCategoryInput: '#transaction-category',
+    transactionCategoryInput: '#transaction-category',
     transactionCostInput: '#transaction-cost',
     transactionDateInput: '#transaction-date',
   }
@@ -18,21 +18,33 @@ export const UICtrl = (function () {
       const datepickerElement = document.querySelector(UISelectors.datepicker)
       M.Datepicker.init(datepickerElement,
         {
-          format: 'dd/mm/yy',
+          format: 'dd/mm/yyyy',
           // defaultDate: new Date(),
           // setDefaultDate: true
         });
 
-      // Get first Date picker instance and set date to todays date by default
-      console.log(datepickerElement.placeholder = new Date(Date.now()).toLocaleDateString())
+      // set placeholder date to todays date and format as dd/mm/yyyy
+      datepickerElement.value = new Date(Date.now()).toLocaleDateString()
 
       // Init Collapser
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
       M.Collapsible.init(collapsibleElements, {});
 
-      //Init Category dropdown menu
-      const dropdownTriggerElements = document.querySelectorAll(UISelectors.dropdownTrigger);
-      M.Dropdown.init(dropdownTriggerElements, {});
+      // //Init Category dropdown menu
+      // const dropdownTriggerElements = document.querySelectorAll(UISelectors.dropdownTrigger);
+      // M.Dropdown.init(dropdownTriggerElements, {});
+
+      // Init category autocomplete
+      var elems = document.querySelectorAll('.autocomplete');
+      M.Autocomplete.init(elems, {
+        data: {
+          "Groceries": null,
+          "Eating Out": null,
+          "Travel": null,
+          "Rent": null
+        }
+      });
+
 
       //Init Add Category modal
       const modalElements = document.querySelectorAll(UISelectors.modal);
@@ -42,7 +54,7 @@ export const UICtrl = (function () {
     getTransactionInput: function () {
       return {
         name: document.querySelector(UISelectors.transactionNameInput).value,
-        // category: document.querySelector(UISelectors.transactionNameInput),
+        category: document.querySelector(UISelectors.transactionCategoryInput).value,
         cost: document.querySelector(UISelectors.transactionCostInput).value,
         date: document.querySelector(UISelectors.transactionDateInput).value,
       }

@@ -68,8 +68,20 @@ export const UICtrl = (function (CalendarCtrl) {
 
     addToCalendar: function (transaction) {
       const date = CalendarCtrl.parseDate(transaction.date)
-      console.log(date)
-      console.log('FUCKIN LOL EY')
+      const structure = CalendarCtrl.getCalendarData()
+
+      /* Grab Calendar element*/
+      let calendar = document.querySelector(UISelectors.calendar)
+
+      /* Create Year Element*/
+      let yearElement = CalendarCtrl.yearHTML(date.year)
+
+      /*Fill Year Element with Month Elements*/
+      CalendarCtrl.getMonths().forEach(month => {
+        calendar.insertAdjacentElement('before')
+      });
+
+
     }
 
   }

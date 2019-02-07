@@ -1,13 +1,27 @@
 // Calendar Controller
 export const CalendarCtrl = (function () {
 
+  let structure = [
+    { selector: null, date: null, transaction: {} }
+  ]
+
+  const months = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"]
+
+
   return {
+    getCalendarData: function () {
+      return structure
+    },
+    getMonths: function () {
+      return months
+    },
     parseDate: function (date) {
       const arr = date.split(' ')
       return {
         year: arr[2],
-        month: arr[1],
-        day: arr[0],
+        month: arr[0],
+        day: arr[1]
       }
     },
     yearHTML: function (year) {

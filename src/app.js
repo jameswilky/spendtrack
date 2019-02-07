@@ -16,7 +16,6 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // Prevent reload on click
     document.querySelector('.add-btn').addEventListener('click', (e) => {
-      console.log('clicked')
       e.preventDefault()
       return false
     })

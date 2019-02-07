@@ -1,5 +1,7 @@
+import { CalendarCtrl } from './calendar.js'
+
 // UI Controller
-export const UICtrl = (function () {
+export const UICtrl = (function (CalendarCtrl) {
   const UISelectors = {
     datepicker: '.datepicker',
     collapsible: '.collapsible',
@@ -10,21 +12,21 @@ export const UICtrl = (function () {
     transactionCategoryInput: '#transaction-category',
     transactionCostInput: '#transaction-cost',
     transactionDateInput: '#transaction-date',
+    calendar: '#calendar'
   }
-
   return {
     initMaterialize: function () {
       // Init Datepicker
       const datepickerElement = document.querySelector(UISelectors.datepicker)
       M.Datepicker.init(datepickerElement,
         {
-          format: 'dd/mm/yyyy',
+          format: 'dd mmm yyyy',
           // defaultDate: new Date(),
           // setDefaultDate: true
         });
 
-      // set placeholder date to todays date and format as dd/mm/yyyy
-      datepickerElement.value = new Date(Date.now()).toLocaleDateString()
+      // set placeholder date to todays date and format as ' dd mmm yyyy'
+      datepickerElement.value = new Date(Date.now()).toString().split(' ').slice(1, 4).join(' ')
 
       // Init Collapser
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
@@ -62,9 +64,15 @@ export const UICtrl = (function () {
 
     getSelectors: function () {
       return UISelectors
+    },
+
+    addToCalendar: function (transaction) {
+      const date = CalendarCtrl.parseDate(transaction.date)
+      console.log(date)
+      console.log('FUCKIN LOL EY')
     }
 
   }
-})();
+})(CalendarCtrl);
 
 

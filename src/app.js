@@ -13,6 +13,14 @@ const App = (function (UICtrl, TransactionCtrl) {
     document.querySelector(UISelectors.addBtn).addEventListener('click',
       transactionAddSubmit);
 
+
+    // Prevent reload on click
+    document.querySelector('.add-btn').addEventListener('click', (e) => {
+      console.log('clicked')
+      e.preventDefault()
+      return false
+    })
+
   }
 
   // Add transaction submit
@@ -22,6 +30,8 @@ const App = (function (UICtrl, TransactionCtrl) {
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
     console.log(newTransaction)
+
+    UICtrl.addToCalendar(newTransaction)
 
 
     // Add Transaction to storage

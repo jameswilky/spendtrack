@@ -27,7 +27,6 @@ export const CalendarCtrl = (function () {
     yearHTML: function (year) {
       let output;
       output = `
-        <li class="${year}">
           <div class="collapsible-header ">${year}
           </div>
             <div class="collapsible-body">
@@ -38,14 +37,15 @@ export const CalendarCtrl = (function () {
                 </div>
               </div>
             </div>
-        </li>
       `
-      return output
+      return {
+        output,
+        selector: '.collapsible'
+      }
     },
     monthHTML: function (month) {
       let output;
       output = `
-        <li class="${month}">
           <div class="collapsible-header white">
             ${month}
           </div>
@@ -63,9 +63,11 @@ export const CalendarCtrl = (function () {
               </tbody>
             </table>
           </div>
-        </li>
       `
-      return output
+      return {
+        output,
+        selector: 'tbody'
+      }
     },
     transactionHTML: function (transaction, day) {
       // To do pass icon

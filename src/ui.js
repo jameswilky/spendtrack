@@ -20,12 +20,12 @@ export const UICtrl = (function (CalendarCtrl) {
       const datepickerElement = document.querySelector(UISelectors.datepicker)
       M.Datepicker.init(datepickerElement,
         {
-          format: 'dd mmm yyyy',
+          format: 'mmm dd yyyy',
           // defaultDate: new Date(),
           // setDefaultDate: true
         });
 
-      // set placeholder date to todays date and format as ' dd mmm yyyy'
+      // set placeholder date to todays date and format as ' mm dd yyyy'
       datepickerElement.value = new Date(Date.now()).toString().split(' ').slice(1, 4).join(' ')
 
       // Init Collapser
@@ -79,19 +79,27 @@ export const UICtrl = (function (CalendarCtrl) {
       // Append Year element to Calendar
       calendar.insertAdjacentElement('beforeend', year.element)
 
-      //Create container for year
-      let container = year.container
-
       /*Fill Year Element with Month Elements*/
-      CalendarCtrl.getMonths().forEach(item => {
+      CalendarCtrl.getMonths().forEach(monthName => {
         //Create Month Element
-        let month = CalendarCtrl.createMonthElement(item)
+        let month = CalendarCtrl.createMonthElement(monthName)
 
         //Append html required for displaying month in calendar
-        container.insertAdjacentElement('beforeend', month.element)
+        year.container.insertAdjacentElement('beforeend', month.element)
+
+
+        //Check if transaction fits inside this month
+        let abrev = monthName.slice(0, 3) // Eg: February -> Feb
+        if (date.month == abrev) {
+          let transactionElement = CalendarCtrl.createTransactionElement(transaction, date.day)
+          console.log(month.container)
+          month.container.insertAdjacentElement('beforeend', transactionElement)
+        }
+        // TEMP
+        // Reinitialize collapsible elements and given them materialie related functionality
+        const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
+        M.Collapsible.init(collapsibleElements, {});
       });
-
-
     }
 
   }

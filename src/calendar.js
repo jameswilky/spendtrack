@@ -8,7 +8,6 @@ export const CalendarCtrl = (function () {
   const months = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"]
 
-
   return {
     getCalendarData: function () {
       return structure
@@ -76,10 +75,10 @@ export const CalendarCtrl = (function () {
     // },
 
     createMonthElement(month) {
-      /* Create template string for year HTML */
+      /* Create template string for month HTML */
       let output;
       output = `
-          <div class="collapsible-header white">
+          <div class="collapsible-header">
             ${month}
           </div>
           <div class="collapsible-body">
@@ -97,16 +96,16 @@ export const CalendarCtrl = (function () {
             </table>
           </div>
       `
-      /* Create Year Element*/
+      /* Create Month Element*/
       let element = document.createElement('li')
       /*Append output to new element*/
       element.innerHTML = output
       element.classList.add(month)
 
-      let container = element.querySelector('.collapsible')
+      let container = element.querySelector('tbody')
 
       return {
-        element, // Represents the element that has been created holding the 'year' html item
+        element, // Represents the element that has been created holding the 'month' html item
         container // Represents the selector that will be used to hold the nested month html items
       }
 
@@ -137,11 +136,10 @@ export const CalendarCtrl = (function () {
     //     selector: 'tbody'
     //   }
     // },
-    transactionHTML: function (transaction, day) {
-      // To do pass icon
+    createTransactionElement(transaction, day) {
+      /* Create template string for transaction HTML */
       let output;
       output = `
-        <tr class="${day}">
           <td>${transaction.date}</td>
           <td>${transaction.name}</td>
           <td><i class="material-icons">restaurant</i></td>
@@ -151,10 +149,35 @@ export const CalendarCtrl = (function () {
               <i class="material-icons">create</i>
             </a>
           </td>
-        </tr>
       `
-      return output
+      /* Create Transaction Element*/
+      let element = document.createElement('tr')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(day)
+
+      return element
+
 
     }
+    // transactionHTML: function (transaction, day) {
+    //   // To do pass icon
+    //   let output;
+    //   output = `
+    //     <tr class="${day}">
+    //       <td>${transaction.date}</td>
+    //       <td>${transaction.name}</td>
+    //       <td><i class="material-icons">restaurant</i></td>
+    //       <td>$${transaction.cost}</td >
+    //       <td>
+    //         <a href="#" class="secondary-content">
+    //           <i class="material-icons">create</i>
+    //         </a>
+    //       </td>
+    //     </tr>
+    //   `
+    //   return output
+
+    // }
   }
 })();

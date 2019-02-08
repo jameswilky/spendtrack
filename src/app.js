@@ -32,7 +32,6 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     UICtrl.addToCalendar(newTransaction)
 
-
     // Add Transaction to storage
 
     // Add transaction to UI
@@ -48,7 +47,7 @@ const App = (function (UICtrl, TransactionCtrl) {
       UICtrl.initMaterialize()
 
       loadEventListeners()
-      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl)
+      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App)
     },
 
 

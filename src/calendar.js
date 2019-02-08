@@ -2,7 +2,7 @@
 export const CalendarCtrl = (function () {
 
   let structure = [
-    { selector: null, date: null, transaction: {} }
+    { selector: null, date: {}, transaction: {} }
   ]
 
   const months = ["January", "February", "March", "April", "May", "June",
@@ -23,161 +23,26 @@ export const CalendarCtrl = (function () {
         day: arr[1]
       }
     },
+    addCalendarItem: function (transaction, date) {
+      let structure = this.getCalendarData();
 
-    createYearElement(year) {
-      /* Create template string for year HTML */
-      let output;
-      output = `
-          <div class="collapsible-header ">${year}
-          </div>
-            <div class="collapsible-body">
-              <div class="row">
-                <div class="col s12 m12">
-                  <ul class="collapsible">
-                  </ul>
-                </div>
-              </div>
-            </div>
-            `
-
-      /* Create Year Element*/
-      let element = document.createElement('li')
-      /*Append output to new element*/
-      element.innerHTML = output
-      element.classList.add(year)
-
-      let container = element.querySelector('.collapsible')
-
-      return {
-        element, // Represents the element that has been created holding the 'year' html item
-        container // Represents the selector that will be used to hold the nested month html items
+      const item = {
+        selector: document.querySelector(`.calendarItem__${date.year}`)
+          .querySelector(`.calendarItem__${date.month}`)
+          .querySelector(`.calendarItem__${date.day}`),
+        date: date,
+        transaction: transaction
       }
-
+      structure.push(item)
     },
-    // yearHTML: function (year) {
-    //   let output;
-    //   output = `
-    //       <div class="collapsible-header ">${year}
-    //       </div>
-    //         <div class="collapsible-body">
-    //           <div class="row">
-    //             <div class="col s12 m12">
-    //               <ul class="collapsible">
-    //               </ul>
-    //             </div>
-    //           </div>
-    //         </div>
-    //   `
-    //   return {
-    //     output,
-    //     selector: '.collapsible'
-    //   }
-    // },
-
-    createMonthElement(month) {
-      /* Create template string for month HTML */
-      let output;
-      output = `
-          <div class="collapsible-header">
-            ${month}
-          </div>
-          <div class="collapsible-body">
-            <table>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-          </div>
-      `
-      /* Create Month Element*/
-      let element = document.createElement('li')
-      /*Append output to new element*/
-      element.innerHTML = output
-      element.classList.add(month)
-
-      let container = element.querySelector('tbody')
-
-      return {
-        element, // Represents the element that has been created holding the 'month' html item
-        container // Represents the selector that will be used to hold the nested month html items
-      }
-
-    },
-    // monthHTML: function (month) {
-    //   let output;
-    //   output = `
-    //       <div class="collapsible-header white">
-    //         ${month}
-    //       </div>
-    //       <div class="collapsible-body">
-    //         <table>
-    //           <thead>
-    //             <tr>
-    //               <th>Date</th>
-    //               <th>Name</th>
-    //               <th>Category</th>
-    //               <th>Price</th>
-    //             </tr>
-    //           </thead>
-    //           <tbody>
-    //           </tbody>
-    //         </table>
-    //       </div>
-    //   `
-    //   return {
-    //     output,
-    //     selector: 'tbody'
-    //   }
-    // },
-    createTransactionElement(transaction, day) {
-      /* Create template string for transaction HTML */
-      let output;
-      output = `
-          <td>${transaction.date}</td>
-          <td>${transaction.name}</td>
-          <td><i class="material-icons">restaurant</i></td>
-          <td>$${transaction.cost}</td >
-          <td>
-            <a href="#" class="secondary-content">
-              <i class="material-icons">create</i>
-            </a>
-          </td>
-      `
-      /* Create Transaction Element*/
-      let element = document.createElement('tr')
-      /*Append output to new element*/
-      element.innerHTML = output
-      element.classList.add(day)
-
-      return element
-
-
+    yearExists: function (year) {
+      // Check structure if year is already present in data structure
+      const structure = this.getCalendarData()
+      structure.forEach(item => {
+        if (year == item.date.year) {
+          return true
+        }
+      });
     }
-    // transactionHTML: function (transaction, day) {
-    //   // To do pass icon
-    //   let output;
-    //   output = `
-    //     <tr class="${day}">
-    //       <td>${transaction.date}</td>
-    //       <td>${transaction.name}</td>
-    //       <td><i class="material-icons">restaurant</i></td>
-    //       <td>$${transaction.cost}</td >
-    //       <td>
-    //         <a href="#" class="secondary-content">
-    //           <i class="material-icons">create</i>
-    //         </a>
-    //       </td>
-    //     </tr>
-    //   `
-    //   return output
-
-    // }
   }
 })();

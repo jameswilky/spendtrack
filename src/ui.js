@@ -65,42 +65,150 @@ export const UICtrl = (function (CalendarCtrl) {
     getSelectors: function () {
       return UISelectors
     },
+    createYearElement: function (year) {
+      /* Create template string for year HTML */
+      let output;
+      output = `
+          <div class="collapsible-header ">${year}
+          </div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s12 m12">
+                  <ul class="collapsible">
+                  </ul>
+                </div>
+              </div>
+            </div>
+            `
 
-    addToCalendar: function (transaction) {
-      const date = CalendarCtrl.parseDate(transaction.date)
-      const structure = CalendarCtrl.getCalendarData()
+      /* Create Year Element*/
+      let element = document.createElement('li')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(`calendarItem__${year}`)
 
+      let container = element.querySelector('.collapsible')
+
+      return {
+        element, // Represents the element that has been created holding the 'year' html item
+        container // Represents the selector that will be used to hold the nested month html items
+      }
+
+    },
+    createMonthElement: function (month) {
+      /* Create template string for month HTML */
+      let output;
+      output = `
+          <div class="collapsible-header">
+            ${month}
+          </div>
+          <div class="collapsible-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+      `
+      /* Create Month Element*/
+      let element = document.createElement('li')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(`calendarItem__${month}`)
+
+      let container = element.querySelector('tbody')
+
+      return {
+        element, // Represents the element that has been created holding the 'month' html item
+        container // Represents the selector that will be used to hold the nested month html items
+      }
+
+    },
+    createTransactionElement: function (transaction, day) {
+      /* Create template string for transaction HTML */
+      let output;
+      output = `
+          <td>${transaction.date}</td>
+          <td>${transaction.name}</td>
+          <td><i class="material-icons">restaurant</i></td>
+          <td>$${transaction.cost}</td >
+          <td>
+            <a href="#" class="secondary-content">
+              <i class="material-icons">create</i>
+            </a>
+          </td>
+      `
+      /* Create Transaction Element*/
+      let element = document.createElement('tr')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(`calendarItem__${day}`)
+
+      return element
+
+
+    },
+    appendYearElement: function (date) {
       /* Grab Calendar element*/
       let calendar = document.querySelector(UISelectors.calendar)
 
       /* Create Year Element*/
-      let year = CalendarCtrl.createYearElement(date.year)
-
+      let year = this.createYearElement(date.year)
       // Append Year element to Calendar
       calendar.insertAdjacentElement('beforeend', year.element)
 
       /*Fill Year Element with Month Elements*/
       CalendarCtrl.getMonths().forEach(monthName => {
         //Create Month Element
-        let month = CalendarCtrl.createMonthElement(monthName)
+        let month = this.createMonthElement(monthName)
 
         //Append html required for displaying month in calendar
         year.container.insertAdjacentElement('beforeend', month.element)
-
-
-        //Check if transaction fits inside this month
-        let abrev = monthName.slice(0, 3) // Eg: February -> Feb
-        if (date.month == abrev) {
-          let transactionElement = CalendarCtrl.createTransactionElement(transaction, date.day)
-          console.log(month.container)
-          month.container.insertAdjacentElement('beforeend', transactionElement)
-        }
-        // TEMP
         // Reinitialize collapsible elements and given them materialie related functionality
-        const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
-        M.Collapsible.init(collapsibleElements, {});
+
       });
-    }
+      const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
+      M.Collapsible.init(collapsibleElements, {});
+    },
+    // addToCalendar: function (transaction) {
+    //   const date = CalendarCtrl.parseDate(transaction.date)
+
+    //   /* Grab Calendar element*/
+    //   let calendar = document.querySelector(UISelectors.calendar)
+
+    //   /* Create Year Element*/
+    //   let year = this.createYearElement(date.year)
+    //   // Append Year element to Calendar
+    //   calendar.insertAdjacentElement('beforeend', year.element)
+
+    //   /*Fill Year Element with Month Elements*/
+    //   CalendarCtrl.getMonths().forEach(monthName => {
+    //     //Create Month Element
+    //     let month = this.createMonthElement(monthName)
+
+    //     //Append html required for displaying month in calendar
+    //     year.container.insertAdjacentElement('beforeend', month.element)
+
+    //     //Check if transaction fits inside this month
+    //     let abrev = monthName.slice(0, 3) // Eg: February -> Feb
+    //     if (date.month == abrev) {
+    //       let transactionElement = this.createTransactionElement(transaction, date.day)
+    //       console.log(month.container)
+    //       month.container.insertAdjacentElement('beforeend', transactionElement)
+    //     }
+    //     // TEMP
+    //     // Reinitialize collapsible elements and given them materialie related functionality
+    //     const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
+    //     M.Collapsible.init(collapsibleElements, {});
+    //   });
+    // }
 
   }
 })(CalendarCtrl);

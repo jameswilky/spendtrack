@@ -74,7 +74,9 @@ export const CalendarCtrl = (function () {
     //     selector: '.collapsible'
     //   }
     // },
-    monthHTML: function (month) {
+
+    createMonthElement(month) {
+      /* Create template string for year HTML */
       let output;
       output = `
           <div class="collapsible-header white">
@@ -95,11 +97,46 @@ export const CalendarCtrl = (function () {
             </table>
           </div>
       `
+      /* Create Year Element*/
+      let element = document.createElement('li')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(month)
+
+      let container = element.querySelector('.collapsible')
+
       return {
-        output,
-        selector: 'tbody'
+        element, // Represents the element that has been created holding the 'year' html item
+        container // Represents the selector that will be used to hold the nested month html items
       }
+
     },
+    // monthHTML: function (month) {
+    //   let output;
+    //   output = `
+    //       <div class="collapsible-header white">
+    //         ${month}
+    //       </div>
+    //       <div class="collapsible-body">
+    //         <table>
+    //           <thead>
+    //             <tr>
+    //               <th>Date</th>
+    //               <th>Name</th>
+    //               <th>Category</th>
+    //               <th>Price</th>
+    //             </tr>
+    //           </thead>
+    //           <tbody>
+    //           </tbody>
+    //         </table>
+    //       </div>
+    //   `
+    //   return {
+    //     output,
+    //     selector: 'tbody'
+    //   }
+    // },
     transactionHTML: function (transaction, day) {
       // To do pass icon
       let output;

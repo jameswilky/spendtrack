@@ -24,7 +24,9 @@ export const CalendarCtrl = (function () {
         day: arr[1]
       }
     },
-    yearHTML: function (year) {
+
+    createYearElement(year) {
+      /* Create template string for year HTML */
       let output;
       output = `
           <div class="collapsible-header ">${year}
@@ -37,12 +39,41 @@ export const CalendarCtrl = (function () {
                 </div>
               </div>
             </div>
-      `
+            `
+
+      /* Create Year Element*/
+      let element = document.createElement('li')
+      /*Append output to new element*/
+      element.innerHTML = output
+      element.classList.add(year)
+
+      let container = element.querySelector('.collapsible')
+
       return {
-        output,
-        selector: '.collapsible'
+        element, // Represents the element that has been created holding the 'year' html item
+        container // Represents the selector that will be used to hold the nested month html items
       }
+
     },
+    // yearHTML: function (year) {
+    //   let output;
+    //   output = `
+    //       <div class="collapsible-header ">${year}
+    //       </div>
+    //         <div class="collapsible-body">
+    //           <div class="row">
+    //             <div class="col s12 m12">
+    //               <ul class="collapsible">
+    //               </ul>
+    //             </div>
+    //           </div>
+    //         </div>
+    //   `
+    //   return {
+    //     output,
+    //     selector: '.collapsible'
+    //   }
+    // },
     monthHTML: function (month) {
       let output;
       output = `

@@ -74,16 +74,13 @@ export const UICtrl = (function (CalendarCtrl) {
       let calendar = document.querySelector(UISelectors.calendar)
 
       /* Create Year Element*/
-      let yearElement = document.createElement('li')
-      yearElement.innerHTML = CalendarCtrl.yearHTML(date.year).output
-      yearElement.classList.add(date.year)
+      let year = CalendarCtrl.createYearElement(date.year)
 
       // Append Year element to Calendar
-      calendar.insertAdjacentElement('beforeend', yearElement)
+      calendar.insertAdjacentElement('beforeend', year.element)
 
       //Create container for year
-
-      let container = yearElement.querySelector(CalendarCtrl.yearHTML(date.year).selector)
+      let container = year.container
 
       /*Fill Year Element with Month Elements*/
       CalendarCtrl.getMonths().forEach(month => {

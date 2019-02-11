@@ -41,16 +41,38 @@ export const TransactionCtrl = (function () {
       }
       return ID
     },
+    parseDate: function (date) {
+      const monthnames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"]
+
+      const arr = date.split('/')
+      return {
+        full: date,
+        year: arr[2],
+        month: monthnames[parseInt(arr[1]) - 1],
+        day: arr[0]
+      }
+    },
     addTransaction: function (transaction) {
       const ID = this.generateID()
 
       // Create New Transaction
-      const newTransaction = new Transaction(ID, transaction.name, transaction.category, transaction.cost, transaction.date)
+      const date = this.parseDate(transaction.date)
+      const newTransaction = new Transaction(ID, transaction.name,
+        transaction.category, transaction.cost, date)
 
       // Add items to data structure
       data.transactions.push(newTransaction);
 
       return newTransaction
+    },
+    yearExists: function (year) {
+      // Check structure if year is already present in data structure
+      data.transactions.forEach(transaction => {
+        if (year == transaction.date.year) {
+          return true
+        }
+      });
     },
     logData: function () {
       return data;

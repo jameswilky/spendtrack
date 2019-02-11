@@ -29,16 +29,17 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
-
-    /* convert mmm/dd/yyyy format to object with year,month and day properties*/
-    const date = CalendarCtrl.parseDate(newTransaction.date) //e.g 01/02/1994 -> date:{day:01, month:"February", year: 1994}
-
     //Check if new item will require adding a new year to the calendar widget
-    if (!CalendarCtrl.yearExists(date.year)) {
-      UICtrl.appendYearElement(date)
-      CalendarCtrl.addCalendarItem(newTransaction, date)
+
+    if (!TransactionCtrl.yearExists(newTransaction.year)) {
+      UICtrl.appendYearElement(newTransaction.date)
     }
-    // UICtrl.addToCalendar(newTransaction)
+
+
+    // Check calendar to find where to place item
+
+    // Once found, update UI to
+    UICtrl.addTransactionElement(newTransaction)
 
     // Add Transaction to storage
 
@@ -55,7 +56,7 @@ const App = (function (UICtrl, TransactionCtrl) {
       UICtrl.initMaterialize()
 
       loadEventListeners()
-      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App, 'CalendarCtrl', CalendarCtrl)
+      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App)
     },
 
 

@@ -30,8 +30,7 @@ const App = (function (UICtrl, TransactionCtrl) {
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
     //Check if new item will require adding a new year to the calendar widget
-
-    if (!TransactionCtrl.yearExists(newTransaction.year)) {
+    if (!TransactionCtrl.yearExists(newTransaction.date.year)) {
       UICtrl.appendYearElement(newTransaction.date)
     }
 
@@ -45,6 +44,8 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // Add transaction to UI
 
+    // deselect transaction
+    newTransaction.current = false;
     e.preventDefault();
   }
 

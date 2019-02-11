@@ -1,12 +1,13 @@
 // Transactions Controller
 export const TransactionCtrl = (function () {
   // Transaction constructor
-  const Transaction = function (id, name, category, cost, date) {
+  const Transaction = function (id, name, category, cost, date, current) {
     this.id = id;
     this.name = name;
     this.category = category;
     this.cost = cost;
     this.date = date;
+    this.current = current;
   }
 
   // Category table
@@ -19,9 +20,9 @@ export const TransactionCtrl = (function () {
   // Data Structure / State
   const data = {
     transactions: [
-      { id: 0, name: 'McDonalds Meal', category: 'Eating Out', cost: 25.00, date: '01/01/2018' },
-      { id: 0, name: 'Groceries', category: 'Groceries', cost: 100.75, date: '04/01/2018' },
-      { id: 0, name: 'Transport', category: 'Transport', cost: 5.20, date: '07/01/2018' }
+      // { id: 0, name: 'McDonalds Meal', category: 'Eating Out', cost: 25.00, date: '01/01/2018' },
+      // { id: 0, name: 'Groceries', category: 'Groceries', cost: 100.75, date: '04/01/2018' },
+      // { id: 0, name: 'Transport', category: 'Transport', cost: 5.20, date: '07/01/2018' }
     ],
     currentTransaction: null
   }
@@ -59,7 +60,8 @@ export const TransactionCtrl = (function () {
       // Create New Transaction
       const date = this.parseDate(transaction.date)
       const newTransaction = new Transaction(ID, transaction.name,
-        transaction.category, transaction.cost, date)
+        transaction.category, transaction.cost, date, true)
+
 
       // Add items to data structure
       data.transactions.push(newTransaction);
@@ -68,11 +70,15 @@ export const TransactionCtrl = (function () {
     },
     yearExists: function (year) {
       // Check structure if year is already present in data structure
+      let found = false
       data.transactions.forEach(transaction => {
-        if (year == transaction.date.year) {
-          return true
+        if ((year == transaction.date.year) && (transaction.current == false)) {
+          console.log(year, transaction)
+          found = true
         }
       });
+      console.log(found)
+      return found
     },
     logData: function () {
       return data;

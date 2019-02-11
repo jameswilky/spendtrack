@@ -18,7 +18,6 @@ export const UICtrl = (function () {
     const years = Array.from(calendar.children)
     let selector;
     years.forEach(year => {
-      console.log(year, date.year)
       if (year.classList.contains(date.year)) {
         const container = year.querySelector(UISelectors.collapsible)
         const months = Array.from(container.children)

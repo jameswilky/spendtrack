@@ -1,9 +1,9 @@
 import { UICtrl } from './ui.js'
 import { TransactionCtrl } from './transactions.js'
-import { CalendarCtrl } from './calendar.js';
+import { CategoryCtrl } from './categories.js';
 
 // App Controller
-const App = (function (UICtrl, TransactionCtrl) {
+const App = (function (UICtrl, TransactionCtrl, CategoryCtrl) {
 
   // Load Event listeners
   const loadEventListeners = function () {
@@ -110,20 +110,15 @@ const App = (function (UICtrl, TransactionCtrl) {
     e.preventDefault();
   }
 
-
-
-
-
-
   return {
     init: function () {
       //Set Initial state of edit buttons
       UICtrl.clearEditState();
 
+      // Get Categories
+      const categories = CategoryCtrl.getCategories()
       // Initialize Materialize components
-      UICtrl.initMaterialize()
-
-
+      UICtrl.initMaterialize(categories)
 
       loadEventListeners()
       console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App)
@@ -131,7 +126,7 @@ const App = (function (UICtrl, TransactionCtrl) {
 
 
   }
-})(UICtrl, TransactionCtrl)
+})(UICtrl, TransactionCtrl, CategoryCtrl)
 
 document.addEventListener('DOMContentLoaded', function () {
   App.init();

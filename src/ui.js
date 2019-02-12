@@ -1,3 +1,5 @@
+import { CategoryCtrl } from "./categories";
+
 // UI Controller
 export const UICtrl = (function () {
   const UISelectors = {
@@ -35,14 +37,14 @@ export const UICtrl = (function () {
 
     return selector
   }
-
   const createTransactionElement = function (transaction) {
+    let icon = CategoryCtrl.getIcon(transaction.category)
     /* Create template string for transaction HTML */
     let output;
     output = `
           <td>${transaction.date.full}</td>
           <td>${transaction.name}</td>
-          <td><i class="material-icons">restaurant</i></td>
+          <td><img src=${icon}></td>
           <td>$${transaction.cost}</td >
           <td>
             <a href="#" class="secondary-content">
@@ -125,16 +127,15 @@ export const UICtrl = (function () {
 
   }
 
-
   return {
-    initMaterialize: function () {
+    initMaterialize: function (categories) {
       // Init Datepicker
       const datepickerElement = document.querySelector(UISelectors.datepicker)
       M.Datepicker.init(datepickerElement,
         {
           format: 'dd/mm/yyyy',
-          // defaultDate: new Date(),
-          // setDefaultDate: true
+          defaultDate: new Date(Date.now()),
+          setDefaultDate: true
         });
 
       // set placeholder date to todays date and format as ' dd mm yyyy'
@@ -144,20 +145,12 @@ export const UICtrl = (function () {
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
       M.Collapsible.init(collapsibleElements, {});
 
-      // //Init Category dropdown menu
-      // const dropdownTriggerElements = document.querySelectorAll(UISelectors.dropdownTrigger);
-      // M.Dropdown.init(dropdownTriggerElements, {});
-
       // Init category autocomplete
       var elems = document.querySelectorAll('.autocomplete');
       M.Autocomplete.init(elems, {
-        data: {
-          "Groceries": null,
-          "Eating Out": null,
-          "Travel": null,
-          "Rent": null
-        }
+        data: categories
       });
+
       //Init Add Category modal
       const modalElements = document.querySelectorAll(UISelectors.modal);
       M.Modal.init(modalElements, {});

@@ -9,19 +9,10 @@ export const TransactionCtrl = (function () {
     this.date = date;
   }
 
-  // Category table
-  const categories = [
-    { id: 0, name: 'Eating Out', icon: '' },
-    { id: 1, name: 'Groceries', icon: '' },
-    { id: 2, name: 'Transport', icon: '' },
-  ]
-
   // Data Structure / State
   const data = {
     transactions: [
-      // { id: 0, name: 'McDonalds Meal', category: 'Eating Out', cost: 25.00, date: '01/01/2018' },
-      // { id: 0, name: 'Groceries', category: 'Groceries', cost: 100.75, date: '04/01/2018' },
-      // { id: 0, name: 'Transport', category: 'Transport', cost: 5.20, date: '07/01/2018' }
+
     ],
     currentTransaction: null
   }

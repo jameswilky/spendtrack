@@ -18,6 +18,8 @@ const App = (function (UICtrl, TransactionCtrl) {
     document.querySelector(UISelectors.calendar).addEventListener('click',
       transactionEditClick);
 
+    document.querySelector(UISelectors.updateBtn).addEventListener('click',
+      transactionUpdateSubmit)
 
     // Prevent reload on click
     document.querySelector('.add-btn').addEventListener('click', (e) => {
@@ -70,6 +72,22 @@ const App = (function (UICtrl, TransactionCtrl) {
     }
 
     // e.preventDefault() // Stops from snapping back to top of page, however this might be useful
+  }
+
+  // Transaction Update Submit
+  const transactionUpdateSubmit = function (e) {
+    // Get transaction Input 
+    const input = UICtrl.getTransactionInput();
+
+    // update transaction
+    const updatedTransaction = TransactionCtrl.updateTransaction(input)
+
+    //Update UI
+    UICtrl.updateTransactionElement(updatedTransaction)
+
+
+    UICtrl.clearEditState();
+    e.preventDefault();
   }
 
 

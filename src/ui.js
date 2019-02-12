@@ -125,6 +125,7 @@ export const UICtrl = (function () {
 
   }
 
+
   return {
     initMaterialize: function () {
       // Init Datepicker
@@ -229,6 +230,24 @@ export const UICtrl = (function () {
       const target = findTargetContainer(transaction.date)
       target.insertAdjacentElement('beforeend', element)
     },
+    updateTransactionElement: function (transaction) {
+      // Create new element with updated transaction
+      const element = createTransactionElement(transaction)
+      // Revert ID back to previous id
+      element.id = transaction.id
+
+      //Remove old element
+      this.deleteTransactionElement(transaction)
+
+      //Locate container for new element
+      const target = findTargetContainer(transaction.date)
+      // insert new element
+      target.insertAdjacentElement('beforeend', element)
+    },
+    deleteTransactionElement: function (transaction) {
+      const element = document.querySelector(`.transaction-${transaction.id}`)
+      element.parentNode.removeChild(element);
+    },
     addTransactionToForm: function (transaction) {
       document.querySelector(UISelectors.transactionNameInput).value = transaction.name
       document.querySelector(UISelectors.transactionCategoryInput).value = transaction.category
@@ -239,5 +258,4 @@ export const UICtrl = (function () {
 
   }
 })();
-
 

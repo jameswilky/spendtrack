@@ -76,6 +76,22 @@ export const TransactionCtrl = (function () {
 
       return newTransaction
     },
+
+    updateTransaction: function (updatedTransaction) {
+      let found = null;
+
+      data.transactions.forEach(transaction => {
+        if (transaction.id === data.currentTransaction.id) {
+          transaction.name = updatedTransaction.name
+          transaction.date = this.parseDate(updatedTransaction.date)
+          transaction.category = updatedTransaction.category
+          transaction.cost = updatedTransaction.cost
+          found = transaction
+        }
+      });
+
+      return found
+    },
     yearExists: function (year) {
       // Check structure if year is already present in data structure
       let found = false

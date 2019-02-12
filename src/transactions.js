@@ -1,13 +1,12 @@
 // Transactions Controller
 export const TransactionCtrl = (function () {
   // Transaction constructor
-  const Transaction = function (id, name, category, cost, date, isSelected) {
+  const Transaction = function (id, name, category, cost, date) {
     this.id = id;
     this.name = name;
     this.category = category;
     this.cost = cost;
     this.date = date;
-    this.isSelected = isSelected;
   }
 
   // Category table
@@ -42,12 +41,10 @@ export const TransactionCtrl = (function () {
       }
       return ID
     },
-    deselect(transaction) {
-      transaction.isSelected = false
-      data.currentTransaction = null
+    getCurrentItem() {
+      return data.currentTransaction
     },
-    select(transaction) {
-      transaction.isSelected = true
+    setCurrentTransaction(transaction) {
       data.currentTransaction = transaction
     },
     parseDate: function (date) {
@@ -92,17 +89,18 @@ export const TransactionCtrl = (function () {
 
       return found
     },
-    yearExists: function (year) {
-      // Check structure if year is already present in data structure
-      let found = false
-      data.transactions.forEach(transaction => {
-        if ((year == transaction.date.year) && (transaction.isSelected == false)) {
-          console.log(year, transaction)
-          found = true
-        }
-      });
-      console.log(found)
-      return found
+    deleteTransaction: function (id) {
+      // get ids
+      const ids = data.transactions.map(function (transaction) {
+        return transaction.id;
+      })
+
+      // Get index
+      const index = ids.indexOf(id);
+
+      //Remove item
+      data.transactions.splice(index, 1);
+
     },
     getTransactionById: function (id) {
       let found = null;

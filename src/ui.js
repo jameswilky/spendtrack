@@ -224,6 +224,18 @@ export const UICtrl = (function () {
       document.querySelector(UISelectors.transactionDateInput).value = new Date(Date.now()).toLocaleDateString('en-GB')
 
     },
+    yearElementExists: function (year) {
+      let found = false
+      const calendar = document.querySelector(UISelectors.calendar)
+      const yearElements = Array.from(calendar.children)
+      yearElements.forEach(element => {
+        if (element.classList.contains(year)) {
+          found = true
+        }
+      })
+      return found
+
+    },
     addTransactionElement: function (transaction) {
       const element = createTransactionElement(transaction)
 

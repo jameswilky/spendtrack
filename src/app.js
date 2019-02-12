@@ -14,19 +14,23 @@ const App = (function (UICtrl, TransactionCtrl) {
     document.querySelector(UISelectors.addBtn).addEventListener('click',
       transactionAddSubmit);
 
-    // Add transaction edit click event on calendar click
+    // transaction edit click event on calendar click
     document.querySelector(UISelectors.calendar).addEventListener('click',
       transactionEditClick);
 
+    // transaction update on update button click
     document.querySelector(UISelectors.updateBtn).addEventListener('click',
       transactionUpdateSubmit)
+
+    // transaction delete on button click
+    document.querySelector(UISelectors.deleteBtn).addEventListener('click',
+      transactionDeleteSubmit)
 
     // Prevent reload on click
     document.querySelector('.add-btn').addEventListener('click', (e) => {
       e.preventDefault()
       return false
     })
-
   }
 
   // Add transaction submit
@@ -35,11 +39,11 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // Add Transaction
     const newTransaction = TransactionCtrl.addTransaction(input)
-    //Check if new item will require adding a new year to the calendar widget
-    if (!TransactionCtrl.yearExists(newTransaction.date.year)) {
+
+    // Check if year elemnt exists for that year
+    if (!UICtrl.yearElementExists(newTransaction.date.year)) {
       UICtrl.appendYearElement(newTransaction.date)
     }
-
     // Once found, update UI to display new transaction
     UICtrl.addTransactionElement(newTransaction)
 
@@ -47,9 +51,6 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     //clear Item
     UICtrl.clearInput();
-
-    // deselect transaction
-    TransactionCtrl.deselect(newTransaction)
 
     e.preventDefault();
   }
@@ -64,7 +65,8 @@ const App = (function (UICtrl, TransactionCtrl) {
       const transactionToEdit = TransactionCtrl.getTransactionById(id)
 
       // Set current transaction
-      TransactionCtrl.select(transactionToEdit)
+      TransactionCtrl.setCurrentTransaction(transactionToEdit)
+
 
       // Load input fields with selected transaction data
       UICtrl.addTransactionToForm(transactionToEdit)
@@ -81,11 +83,29 @@ const App = (function (UICtrl, TransactionCtrl) {
 
     // update transaction
     const updatedTransaction = TransactionCtrl.updateTransaction(input)
-
+    //Check if new item will require adding a new year to the calendar widget
+    if (!UICtrl.yearElementExists(updatedTransaction.date.year)) {
+      UICtrl.appendYearElement(updatedTransaction.date)
+    }
     //Update UI
     UICtrl.updateTransactionElement(updatedTransaction)
 
+    UICtrl.clearEditState();
+    e.preventDefault();
+  }
 
+  // Delete item event
+  const transactionDeleteSubmit = function (e) {
+    // Get Current Transaction
+    const currentTransaction = TransactionCtrl.getCurrentItem();
+
+    // Delete item from data structure
+    TransactionCtrl.deleteTransaction(currentTransaction.id)
+
+    // Delete from UI
+    UICtrl.deleteTransactionElement(currentTransaction)
+
+    // clear UI
     UICtrl.clearEditState();
     e.preventDefault();
   }

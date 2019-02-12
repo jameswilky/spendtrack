@@ -14,6 +14,10 @@ const App = (function (UICtrl, TransactionCtrl) {
     document.querySelector(UISelectors.addBtn).addEventListener('click',
       transactionAddSubmit);
 
+    // Add transaction edit click event on calendar click
+    document.querySelector(UISelectors.calendar).addEventListener('click',
+      transactionEditClick);
+
 
     // Prevent reload on click
     document.querySelector('.add-btn').addEventListener('click', (e) => {
@@ -34,27 +38,54 @@ const App = (function (UICtrl, TransactionCtrl) {
       UICtrl.appendYearElement(newTransaction.date)
     }
 
-
-    // Check calendar to find where to place item
-
-    // Once found, update UI to
+    // Once found, update UI to display new transaction
     UICtrl.addTransactionElement(newTransaction)
 
     // Add Transaction to storage
 
-    // Add transaction to UI
+    //clear Item
+    UICtrl.clearInput();
 
     // deselect transaction
-    newTransaction.current = false;
+    TransactionCtrl.deselect(newTransaction)
+
     e.preventDefault();
   }
+
+  // Click edit transaction
+  const transactionEditClick = function (e) {
+    if (e.target.classList.contains('edit-transaction')) {
+      // Targets parent transaction element, gets the class name (e.g 'transaction-1') and splits to get the actual ID
+      const id = parseInt(e.target.parentNode.parentNode.parentNode.classList[1].split('-')[1])
+
+      // Get transaction
+      const transactionToEdit = TransactionCtrl.getTransactionById(id)
+
+      // Set current transaction
+      TransactionCtrl.select(transactionToEdit)
+
+      // Load input fields with selected transaction data
+      UICtrl.addTransactionToForm(transactionToEdit)
+
+    }
+
+    // e.preventDefault() // Stops from snapping back to top of page, however this might be useful
+  }
+
+
+
 
 
 
   return {
     init: function () {
+      //Set Initial state of edit buttons
+      UICtrl.clearEditState();
+
       // Initialize Materialize components
       UICtrl.initMaterialize()
+
+
 
       loadEventListeners()
       console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App)

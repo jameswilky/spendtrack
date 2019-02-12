@@ -6,6 +6,9 @@ export const UICtrl = (function () {
     dropdownTrigger: '.dropdown-trigger',
     modal: '.modal',
     addBtn: '.add-btn',
+    updateBtn: '.update-btn',
+    deleteBtn: '.delete-btn',
+    backBtn: '.back-btn',
     transactionNameInput: '#transaction-name',
     transactionCategoryInput: '#transaction-category',
     transactionCostInput: '#transaction-cost',
@@ -28,8 +31,6 @@ export const UICtrl = (function () {
           }
         })
       }
-
-
     })
 
     return selector
@@ -45,7 +46,7 @@ export const UICtrl = (function () {
           <td>$${transaction.cost}</td >
           <td>
             <a href="#" class="secondary-content">
-              <i class="material-icons">create</i>
+              <i class="material-icons edit-transaction">create</i>
             </a>
           </td>
       `
@@ -53,7 +54,7 @@ export const UICtrl = (function () {
     let element = document.createElement('tr')
     /*Append output to new element*/
     element.innerHTML = output
-    element.classList.add(`${transaction.date.day}`)
+    element.classList.add(transaction.date.day, `transaction-${transaction.id}`)
 
     return element
   }
@@ -160,6 +161,21 @@ export const UICtrl = (function () {
       const modalElements = document.querySelectorAll(UISelectors.modal);
       M.Modal.init(modalElements, {});
     },
+    clearEditState: function () {
+      UICtrl.clearInput();
+      document.querySelector(UISelectors.updateBtn).style.display = 'none'
+      document.querySelector(UISelectors.deleteBtn).style.display = 'none'
+      document.querySelector(UISelectors.backBtn).style.display = 'none'
+      document.querySelector(UISelectors.addBtn).style.display = 'inline'
+
+    },
+    showEditState: function () {
+      document.querySelector(UISelectors.updateBtn).style.display = 'inline'
+      document.querySelector(UISelectors.deleteBtn).style.display = 'inline'
+      document.querySelector(UISelectors.backBtn).style.display = 'inline'
+      document.querySelector(UISelectors.addBtn).style.display = 'none'
+
+    },
     // Get information from form
     getTransactionInput: function () {
       return {
@@ -198,12 +214,27 @@ export const UICtrl = (function () {
       const collapsibleElements = document.querySelectorAll(UISelectors.collapsible);
       M.Collapsible.init(collapsibleElements, {});
     },
+    clearInput: function () {
+      // Empty input fields
+      document.querySelector(UISelectors.transactionNameInput).value = ''
+      document.querySelector(UISelectors.transactionCategoryInput).value = ''
+      document.querySelector(UISelectors.transactionCostInput).value = ''
+      // Change date to todays date
+      document.querySelector(UISelectors.transactionDateInput).value = new Date(Date.now()).toLocaleDateString('en-GB')
 
+    },
     addTransactionElement: function (transaction) {
       const element = createTransactionElement(transaction)
 
       const target = findTargetContainer(transaction.date)
       target.insertAdjacentElement('beforeend', element)
+    },
+    addTransactionToForm: function (transaction) {
+      document.querySelector(UISelectors.transactionNameInput).value = transaction.name
+      document.querySelector(UISelectors.transactionCategoryInput).value = transaction.category
+      document.querySelector(UISelectors.transactionCostInput).value = transaction.cost
+      document.querySelector(UISelectors.transactionDateInput).value = transaction.date.full
+      this.showEditState();
     }
 
   }

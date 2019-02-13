@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="stylesheet" href="./src/assets/css/materialize.css">
+
   <title>SpendTrack</title>
 </head>
 
-<body>
+<body class="blue-grey lighten-2">
 
   <!-- Header -->
   <nav>
-    <div class="nav-wrapper ">
-      <div class="container">
+    <div class="nav-wrapper orange">
+      <div class="container ">
         <a href="#" class="brand-logo center">SpendTrack</a>
       </div>
     </div>
@@ -27,9 +28,9 @@
 
   <div class="container">
     <!-- Form Card -->
-    <div class="card">
+    <div class="card blue-grey darken-3">
       <div class="card-content">
-        <span class="card-title">Add Transaction</span>
+        <span class="card-title orange-text">Add Transaction</span>
         <form class="col s12">
 
           <div class="row">
@@ -41,31 +42,9 @@
             <!-- Category input box-->
             <div class="input-field col s12">
               <img src="" alt="">
-              <input type="text" id="transaction-category" class="autocomplete" placeholder="Category" autocomplete="off">
+              <input type="text" id="transaction-category" class="autocomplete" placeholder="Category"
+                autocomplete="off">
             </div>
-
-            <!-- Drop down trigger-->
-            <!-- TODO replace later with a clickable input field-->
-            <!-- <a class='dropdown-trigger btn' href='#' data-target='category-dropdown'>Category <i class="fa fa-angle-down"></i>
-            </a> -->
-            <!-- Dropdown Structure -->
-            <!-- <ul id='category-dropdown' class='dropdown-content'>
-              <li><a href="#!"><i class="material-icons">directions_car</i>Transportation</a></li>
-              <li><a href="#!"><i class="material-icons">local_grocery_store</i>Groceries</a></li>
-              <li><a href="#!"><i class="material-icons">restaurant</i>Eating Out</a></li>
-              <li class="divider" tabindex="-1"></li>
-              <li> <ul id='category-dropdown' class='dropdown-content'> -->
-            <!-- <li><a href="#!"><i class="material-icons">directions_car</i>Transportation</a></li>
-            <li><a href="#!"><i class="material-icons">local_grocery_store</i>Groceries</a></li>
-            <li><a href="#!"><i class="material-icons">restaurant</i>Eating Out</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li> -->
-            <!-- Category Modal trigger-->
-            <!-- <a class="waves-effect waves-light modal-trigger" href="#add-category-modal">
-                  <i class="material-icons">add</i>Add New Category
-                </a>
-              </li>
-            </ul> -->
 
           </div>
           <div class="row">
@@ -83,16 +62,16 @@
 
           <div class="row ">
             <div class="col s6 left-align">
-              <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Transaction</button>
+              <button class="delete-btn btn"><i class="fa fa-remove"></i> Delete Transaction</button>
             </div>
             <div class="col s6 right-align">
-              <button class="add-btn btn "><i class="fa fa-plus"></i> Add Transaction</button>
-              <button class="update-btn btn orange "><i class="fa fa-pencil-square-o"></i> Update Transaction</button>
+              <button class="add-btn btn blue-grey"><i class="fa fa-plus"></i> Add Transaction</button>
+              <button class="update-btn btn "><i class="fa fa-pencil-square-o"></i> Update Transaction</button>
             </div>
           </div>
           <div class="row">
             <div class="col right">
-              <button class="back-btn btn grey"><i class="fa fa-chevron-circle-left"></i> Back</button>
+              <button class="back-btn btn"><i class="fa fa-chevron-circle-left"></i> Back</button>
             </div>
           </div>
         </form>
@@ -195,8 +174,8 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="build/app.bundle.js"></script>
 

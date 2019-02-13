@@ -1,0 +1,99 @@
+/* Odd Year Elements*/
+#calendar > li > div:first-child {
+  background-color: green;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:first-child > div {
+  background-color: red;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(2) > div {
+  background-color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(3) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(4) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(5) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(6) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(7) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(8) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(9) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(10) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(11) > div {
+  color: blue;
+}
+
+#calendar > li > div:nth-child(2) > .row > .col > ul li:nth-child(12) > div {
+  color: blue;
+}
+
+/* Event Year Elements*/
+#calendar > li:nth-child(2) {
+  background-color: red;
+}
+
+/* Other tweaks */
+body {
+  @extends .black;
+}
+
+.currency {
+  position: absolute;
+  top: 11px;
+}
+
+.currency--active {
+  color: black;
+}
+
+.currency--inactive {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+#transaction-cost {
+  padding-left: 12px;
+}
+
+.dropdown-trigger {
+  margin-top: 20px;
+  display: block;
+}
+
+.collapsible-body, .collapsible {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: #fff;
+}
+
+.collapsible-body > table {
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

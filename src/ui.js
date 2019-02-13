@@ -70,10 +70,8 @@ export const UICtrl = (function () {
         </div>
           <div class="collapsible-body">
             <div class="row">
-              <div class="col s12 m12">
                 <ul class="collapsible">
                 </ul>
-              </div>
             </div>
           </div>
           `

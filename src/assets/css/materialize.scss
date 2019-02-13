@@ -41,59 +41,38 @@
 @import "components/timepicker";
 
 /* Calendar Elements */
-$oddYearContainer : '#calendar > li';
-$evenYearContainer : '#calendar> li:nth-child(2)';
+$oddYearContainer : '#calendar > li:nth-child(odd)';
+$evenYearContainer : '#calendar> li:nth-child(even)';
 $yearHeader : 'div:first-child';
-$yearBody : 'div:nth-child(2) > .row > .col > ul';
+$yearBody : 'div:nth-child(2) > .row > ul';
 
 $monthContainer : 'li > div';
 
 body{
+  @extend .blue-grey, .darken-4;
 }
+
+.header{
+  @extend .orange, .darken-2;
+}
+
+
+
 
 /* Odd Year Elements*/
 #{$oddYearContainer}{
 
   > #{$yearHeader}{
-    @extend .blue-grey;
+    @extend .orange, .lighten-1;
   }
 
   > #{$yearBody}{
-
-    li:first-child > div{
+    li:nth-child(odd) > div{
+      @extend .blue-grey, .lighten-5;
     }
-    li:nth-child(2) > div{
-    }
-    li:nth-child(3) > div{
-      color: blue;
-    }
-    li:nth-child(4) > div{
-      color: blue;
-    }
-    li:nth-child(5) > div{
-      color: blue;
-    }
-    li:nth-child(6) > div{
-      color: blue;
-    }
-    li:nth-child(7) > div{
-      color: blue;
-    }
-    li:nth-child(8) > div{
-      color: blue;
-    }
-    li:nth-child(9) > div{
-      color: blue;
-    }
-    li:nth-child(10) > div{
-      color: blue;
-    }
-    li:nth-child(11) > div{
-      color: blue;
-    }
-    li:nth-child(12) > div{
-      color: blue;
-    }
+    li:nth-child(even) > div{
+      @extend .blue-grey, .lighten-3;
+    }        
   }
 
 } 
@@ -101,9 +80,17 @@ body{
 /* Event Year Elements*/
 #{$evenYearContainer}{
   > #{$yearHeader}{
-    @extend .orange; 
+    @extend .blue-grey, .lighten-1;
   }
-  
+
+  > #{$yearBody}{
+    li:nth-child(odd) > div{
+      @extend .orange, .lighten-5;
+    }
+    li:nth-child(even) > div{
+      @extend .orange, .lighten-3;
+    }        
+  }
 }
 
 

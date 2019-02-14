@@ -28,7 +28,6 @@ export const CategoryCtrl = (function () {
       Object.entries(data.categories).forEach(entry => {
         const key = entry[0]
         const value = entry[1]
-        console.log(category, key)
 
         if (key == category) {
           icon = value

@@ -54,7 +54,7 @@ body{
 }
 
 .header{
-  @extend .orange, .darken-2;
+  @extend .orange, .darken-1 ;
 }
 
 
@@ -68,12 +68,37 @@ body{
   }
 
   > #{$yearBody}{
-    li:nth-child(odd) > div{
+    /*odd month container headers*/
+    li:nth-child(odd) > div:first-child{
       @extend .blue-grey, .lighten-5;
     }
-    li:nth-child(even) > div{
+
+    /*even month container headers*/
+    li:nth-child(even) > div:first-child{
       @extend .blue-grey, .lighten-3;
-    }        
+    }   
+
+    /*month container bodys*/
+    li > div:nth-child(2){
+    /*month table header*/
+    > table >thead{
+      @extend .orange, .lighten-2;
+    }
+    /*month table body */
+    > table > tbody{
+      /*odd transactions*/
+      > tr:nth-child(odd){
+        @extend .orange, .lighten-5;
+      }
+      /*even transactions*/
+      > tr:nth-child(even){
+        @extend .orange, .lighten-3;
+      }
+    }
+
+  }
+    
+         
   }
 
 } 
@@ -85,18 +110,48 @@ body{
   }
 
   > #{$yearBody}{
-    li:nth-child(odd) > div{
+    /*odd month container headers*/
+    li:nth-child(odd) > div:first-child{
       @extend .orange, .lighten-5;
     }
-    li:nth-child(even) > div{
+
+    /*even month container headers*/
+    li:nth-child(even) > div:first-child{
       @extend .orange, .lighten-3;
-    }        
+    }   
+
+    /*month container bodys*/
+    li > div:nth-child(2){
+    /*month table header*/
+    > table >thead{
+      @extend .blue-grey, .lighten-2;
+    }
+    /*month table body */
+    > table > tbody{
+      /*odd transactions*/
+      > tr:nth-child(odd){
+        @extend .blue-grey, .lighten-5;
+      }
+      /*even transactions*/
+      > tr:nth-child(even){
+        @extend .blue-grey, .lighten-3;
+      }
+    }
+
   }
+    
+         
+  }
+
 }
 
 
 
 /* Other tweaks */
+
+table {
+  margin:0 !important;
+}
 
 .currency{
   position: absolute;

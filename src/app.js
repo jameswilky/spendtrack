@@ -2,8 +2,27 @@ import { UICtrl } from './ui.js'
 import { TransactionCtrl } from './transactions.js'
 import { CategoryCtrl } from './categories.js';
 
+
+
 // App Controller
 const App = (function (UICtrl, TransactionCtrl, CategoryCtrl) {
+
+  const inputIsValid = function (input) {
+    let valid = false;
+    //if date is valid
+    let isDate = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/
+    if (isDate.test(input.date)) {
+      valid = true
+      // If any item is not empty
+      for (let key in input) {
+        if (input[key] === "") {
+          valid = false
+        }
+      }
+    }
+
+    return valid
+  }
 
   // Load Event listeners
   const loadEventListeners = function () {
@@ -37,20 +56,22 @@ const App = (function (UICtrl, TransactionCtrl, CategoryCtrl) {
   const transactionAddSubmit = function (e) {
     const input = UICtrl.getTransactionInput();
 
-    // Add Transaction
-    const newTransaction = TransactionCtrl.addTransaction(input)
+    if (inputIsValid(input)) {
+      // Add Transaction
+      const newTransaction = TransactionCtrl.addTransaction(input)
 
-    // Check if year elemnt exists for that year
-    if (!UICtrl.yearElementExists(newTransaction.date.year)) {
-      UICtrl.appendYearElement(newTransaction.date)
+      // Check if year elemnt exists for that year
+      if (!UICtrl.yearElementExists(newTransaction.date.year)) {
+        UICtrl.appendYearElement(newTransaction.date)
+      }
+      // Once found, update UI to display new transaction
+      UICtrl.addTransactionElement(newTransaction)
+
+      // Add Transaction to storage
+
+      //clear Item
+      UICtrl.clearInput();
     }
-    // Once found, update UI to display new transaction
-    UICtrl.addTransactionElement(newTransaction)
-
-    // Add Transaction to storage
-
-    //clear Item
-    UICtrl.clearInput();
 
     e.preventDefault();
   }
@@ -121,7 +142,6 @@ const App = (function (UICtrl, TransactionCtrl, CategoryCtrl) {
       UICtrl.initMaterialize(categories)
 
       loadEventListeners()
-      console.log('TransactionCtrl:', TransactionCtrl, 'UICtrl:', UICtrl, 'AppCtrl', App)
     },
 
 

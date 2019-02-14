@@ -6,7 +6,7 @@
   color: #e51c23 !important;
 }
 
-.materialize-red.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.materialize-red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.materialize-red {
+.materialize-red.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.materialize-red:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.materialize-red:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.materialize-red:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.materialize-red:nth-child(odd) {
   background-color: #fdeaeb !important;
 }
 
@@ -22,7 +22,7 @@
   color: #f8c1c3 !important;
 }
 
-.materialize-red.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.materialize-red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.materialize-red {
+.materialize-red.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.materialize-red:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.materialize-red:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.materialize-red:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.materialize-red:nth-child(even) {
   background-color: #f3989b !important;
 }
 
@@ -30,7 +30,7 @@
   color: #f3989b !important;
 }
 
-.materialize-red.lighten-2 {
+.materialize-red.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.materialize-red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.materialize-red {
   background-color: #ee6e73 !important;
 }
 
@@ -46,7 +46,7 @@
   color: #ea454b !important;
 }
 
-.materialize-red.darken-1 {
+.materialize-red.darken-1, .materialize-red.header {
   background-color: #d0181e !important;
 }
 
@@ -54,7 +54,7 @@
   color: #d0181e !important;
 }
 
-.materialize-red.darken-2, .materialize-red.header {
+.materialize-red.darken-2 {
   background-color: #b9151b !important;
 }
 
@@ -86,7 +86,7 @@
   color: #F44336 !important;
 }
 
-.red.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.red {
+.red.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.red:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.red:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.red:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.red:nth-child(odd) {
   background-color: #FFEBEE !important;
 }
 
@@ -102,7 +102,7 @@
   color: #FFCDD2 !important;
 }
 
-.red.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.red {
+.red.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.red:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.red:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.red:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.red:nth-child(even) {
   background-color: #EF9A9A !important;
 }
 
@@ -110,7 +110,7 @@
   color: #EF9A9A !important;
 }
 
-.red.lighten-2 {
+.red.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.red, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.red {
   background-color: #E57373 !important;
 }
 
@@ -126,7 +126,7 @@
   color: #EF5350 !important;
 }
 
-.red.darken-1 {
+.red.darken-1, .red.header {
   background-color: #E53935 !important;
 }
 
@@ -134,7 +134,7 @@
   color: #E53935 !important;
 }
 
-.red.darken-2, .red.header {
+.red.darken-2 {
   background-color: #D32F2F !important;
 }
 
@@ -198,7 +198,7 @@
   color: #e91e63 !important;
 }
 
-.pink.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.pink, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.pink {
+.pink.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.pink:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.pink:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.pink:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.pink:nth-child(odd) {
   background-color: #fce4ec !important;
 }
 
@@ -214,7 +214,7 @@
   color: #f8bbd0 !important;
 }
 
-.pink.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.pink, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.pink {
+.pink.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.pink:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.pink:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.pink:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.pink:nth-child(even) {
   background-color: #f48fb1 !important;
 }
 
@@ -222,7 +222,7 @@
   color: #f48fb1 !important;
 }
 
-.pink.lighten-2 {
+.pink.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.pink, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.pink {
   background-color: #f06292 !important;
 }
 
@@ -238,7 +238,7 @@
   color: #ec407a !important;
 }
 
-.pink.darken-1 {
+.pink.darken-1, .pink.header {
   background-color: #d81b60 !important;
 }
 
@@ -246,7 +246,7 @@
   color: #d81b60 !important;
 }
 
-.pink.darken-2, .pink.header {
+.pink.darken-2 {
   background-color: #c2185b !important;
 }
 
@@ -310,7 +310,7 @@
   color: #9c27b0 !important;
 }
 
-.purple.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.purple {
+.purple.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.purple:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.purple:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.purple:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.purple:nth-child(odd) {
   background-color: #f3e5f5 !important;
 }
 
@@ -326,7 +326,7 @@
   color: #e1bee7 !important;
 }
 
-.purple.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.purple {
+.purple.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.purple:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.purple:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.purple:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.purple:nth-child(even) {
   background-color: #ce93d8 !important;
 }
 
@@ -334,7 +334,7 @@
   color: #ce93d8 !important;
 }
 
-.purple.lighten-2 {
+.purple.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.purple {
   background-color: #ba68c8 !important;
 }
 
@@ -350,7 +350,7 @@
   color: #ab47bc !important;
 }
 
-.purple.darken-1 {
+.purple.darken-1, .purple.header {
   background-color: #8e24aa !important;
 }
 
@@ -358,7 +358,7 @@
   color: #8e24aa !important;
 }
 
-.purple.darken-2, .purple.header {
+.purple.darken-2 {
   background-color: #7b1fa2 !important;
 }
 
@@ -422,7 +422,7 @@
   color: #673ab7 !important;
 }
 
-.deep-purple.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-purple {
+.deep-purple.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-purple:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-purple:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-purple:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-purple:nth-child(odd) {
   background-color: #ede7f6 !important;
 }
 
@@ -438,7 +438,7 @@
   color: #d1c4e9 !important;
 }
 
-.deep-purple.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-purple {
+.deep-purple.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-purple:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-purple:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-purple:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-purple:nth-child(even) {
   background-color: #b39ddb !important;
 }
 
@@ -446,7 +446,7 @@
   color: #b39ddb !important;
 }
 
-.deep-purple.lighten-2 {
+.deep-purple.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.deep-purple, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.deep-purple {
   background-color: #9575cd !important;
 }
 
@@ -462,7 +462,7 @@
   color: #7e57c2 !important;
 }
 
-.deep-purple.darken-1 {
+.deep-purple.darken-1, .deep-purple.header {
   background-color: #5e35b1 !important;
 }
 
@@ -470,7 +470,7 @@
   color: #5e35b1 !important;
 }
 
-.deep-purple.darken-2, .deep-purple.header {
+.deep-purple.darken-2 {
   background-color: #512da8 !important;
 }
 
@@ -534,7 +534,7 @@
   color: #3f51b5 !important;
 }
 
-.indigo.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.indigo, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.indigo {
+.indigo.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.indigo:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.indigo:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.indigo:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.indigo:nth-child(odd) {
   background-color: #e8eaf6 !important;
 }
 
@@ -550,7 +550,7 @@
   color: #c5cae9 !important;
 }
 
-.indigo.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.indigo, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.indigo {
+.indigo.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.indigo:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.indigo:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.indigo:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.indigo:nth-child(even) {
   background-color: #9fa8da !important;
 }
 
@@ -558,7 +558,7 @@
   color: #9fa8da !important;
 }
 
-.indigo.lighten-2 {
+.indigo.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.indigo, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.indigo {
   background-color: #7986cb !important;
 }
 
@@ -574,7 +574,7 @@
   color: #5c6bc0 !important;
 }
 
-.indigo.darken-1 {
+.indigo.darken-1, .indigo.header {
   background-color: #3949ab !important;
 }
 
@@ -582,7 +582,7 @@
   color: #3949ab !important;
 }
 
-.indigo.darken-2, .indigo.header {
+.indigo.darken-2 {
   background-color: #303f9f !important;
 }
 
@@ -646,7 +646,7 @@
   color: #2196F3 !important;
 }
 
-.blue.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue {
+.blue.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue:nth-child(odd) {
   background-color: #E3F2FD !important;
 }
 
@@ -662,7 +662,7 @@
   color: #BBDEFB !important;
 }
 
-.blue.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue {
+.blue.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue:nth-child(even) {
   background-color: #90CAF9 !important;
 }
 
@@ -670,7 +670,7 @@
   color: #90CAF9 !important;
 }
 
-.blue.lighten-2 {
+.blue.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.blue {
   background-color: #64B5F6 !important;
 }
 
@@ -686,7 +686,7 @@
   color: #42A5F5 !important;
 }
 
-.blue.darken-1 {
+.blue.darken-1, .blue.header {
   background-color: #1E88E5 !important;
 }
 
@@ -694,7 +694,7 @@
   color: #1E88E5 !important;
 }
 
-.blue.darken-2, .blue.header {
+.blue.darken-2 {
   background-color: #1976D2 !important;
 }
 
@@ -758,7 +758,7 @@
   color: #03a9f4 !important;
 }
 
-.light-blue.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-blue {
+.light-blue.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-blue:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-blue:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-blue:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-blue:nth-child(odd) {
   background-color: #e1f5fe !important;
 }
 
@@ -774,7 +774,7 @@
   color: #b3e5fc !important;
 }
 
-.light-blue.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-blue {
+.light-blue.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-blue:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-blue:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-blue:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-blue:nth-child(even) {
   background-color: #81d4fa !important;
 }
 
@@ -782,7 +782,7 @@
   color: #81d4fa !important;
 }
 
-.light-blue.lighten-2 {
+.light-blue.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.light-blue, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.light-blue {
   background-color: #4fc3f7 !important;
 }
 
@@ -798,7 +798,7 @@
   color: #29b6f6 !important;
 }
 
-.light-blue.darken-1 {
+.light-blue.darken-1, .light-blue.header {
   background-color: #039be5 !important;
 }
 
@@ -806,7 +806,7 @@
   color: #039be5 !important;
 }
 
-.light-blue.darken-2, .light-blue.header {
+.light-blue.darken-2 {
   background-color: #0288d1 !important;
 }
 
@@ -870,7 +870,7 @@
   color: #00bcd4 !important;
 }
 
-.cyan.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.cyan, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.cyan {
+.cyan.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.cyan:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.cyan:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.cyan:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.cyan:nth-child(odd) {
   background-color: #e0f7fa !important;
 }
 
@@ -886,7 +886,7 @@
   color: #b2ebf2 !important;
 }
 
-.cyan.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.cyan, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.cyan {
+.cyan.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.cyan:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.cyan:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.cyan:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.cyan:nth-child(even) {
   background-color: #80deea !important;
 }
 
@@ -894,7 +894,7 @@
   color: #80deea !important;
 }
 
-.cyan.lighten-2 {
+.cyan.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.cyan, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.cyan {
   background-color: #4dd0e1 !important;
 }
 
@@ -910,7 +910,7 @@
   color: #26c6da !important;
 }
 
-.cyan.darken-1 {
+.cyan.darken-1, .cyan.header {
   background-color: #00acc1 !important;
 }
 
@@ -918,7 +918,7 @@
   color: #00acc1 !important;
 }
 
-.cyan.darken-2, .cyan.header {
+.cyan.darken-2 {
   background-color: #0097a7 !important;
 }
 
@@ -982,7 +982,7 @@
   color: #009688 !important;
 }
 
-.teal.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.teal, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.teal {
+.teal.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.teal:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.teal:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.teal:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.teal:nth-child(odd) {
   background-color: #e0f2f1 !important;
 }
 
@@ -998,7 +998,7 @@
   color: #b2dfdb !important;
 }
 
-.teal.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.teal, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.teal {
+.teal.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.teal:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.teal:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.teal:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.teal:nth-child(even) {
   background-color: #80cbc4 !important;
 }
 
@@ -1006,7 +1006,7 @@
   color: #80cbc4 !important;
 }
 
-.teal.lighten-2 {
+.teal.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.teal, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.teal {
   background-color: #4db6ac !important;
 }
 
@@ -1022,7 +1022,7 @@
   color: #26a69a !important;
 }
 
-.teal.darken-1 {
+.teal.darken-1, .teal.header {
   background-color: #00897b !important;
 }
 
@@ -1030,7 +1030,7 @@
   color: #00897b !important;
 }
 
-.teal.darken-2, .teal.header {
+.teal.darken-2 {
   background-color: #00796b !important;
 }
 
@@ -1094,7 +1094,7 @@
   color: #4CAF50 !important;
 }
 
-.green.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.green {
+.green.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.green:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.green:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.green:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.green:nth-child(odd) {
   background-color: #E8F5E9 !important;
 }
 
@@ -1110,7 +1110,7 @@
   color: #C8E6C9 !important;
 }
 
-.green.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.green {
+.green.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.green:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.green:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.green:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.green:nth-child(even) {
   background-color: #A5D6A7 !important;
 }
 
@@ -1118,7 +1118,7 @@
   color: #A5D6A7 !important;
 }
 
-.green.lighten-2 {
+.green.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.green {
   background-color: #81C784 !important;
 }
 
@@ -1134,7 +1134,7 @@
   color: #66BB6A !important;
 }
 
-.green.darken-1 {
+.green.darken-1, .green.header {
   background-color: #43A047 !important;
 }
 
@@ -1142,7 +1142,7 @@
   color: #43A047 !important;
 }
 
-.green.darken-2, .green.header {
+.green.darken-2 {
   background-color: #388E3C !important;
 }
 
@@ -1206,7 +1206,7 @@
   color: #8bc34a !important;
 }
 
-.light-green.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-green {
+.light-green.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-green:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-green:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.light-green:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-green:nth-child(odd) {
   background-color: #f1f8e9 !important;
 }
 
@@ -1222,7 +1222,7 @@
   color: #dcedc8 !important;
 }
 
-.light-green.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-green {
+.light-green.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-green:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-green:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.light-green:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.light-green:nth-child(even) {
   background-color: #c5e1a5 !important;
 }
 
@@ -1230,7 +1230,7 @@
   color: #c5e1a5 !important;
 }
 
-.light-green.lighten-2 {
+.light-green.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.light-green, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.light-green {
   background-color: #aed581 !important;
 }
 
@@ -1246,7 +1246,7 @@
   color: #9ccc65 !important;
 }
 
-.light-green.darken-1 {
+.light-green.darken-1, .light-green.header {
   background-color: #7cb342 !important;
 }
 
@@ -1254,7 +1254,7 @@
   color: #7cb342 !important;
 }
 
-.light-green.darken-2, .light-green.header {
+.light-green.darken-2 {
   background-color: #689f38 !important;
 }
 
@@ -1318,7 +1318,7 @@
   color: #cddc39 !important;
 }
 
-.lime.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lime, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lime {
+.lime.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lime:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lime:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lime:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lime:nth-child(odd) {
   background-color: #f9fbe7 !important;
 }
 
@@ -1334,7 +1334,7 @@
   color: #f0f4c3 !important;
 }
 
-.lime.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lime, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lime {
+.lime.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lime:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lime:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lime:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lime:nth-child(even) {
   background-color: #e6ee9c !important;
 }
 
@@ -1342,7 +1342,7 @@
   color: #e6ee9c !important;
 }
 
-.lime.lighten-2 {
+.lime.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lime, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lime {
   background-color: #dce775 !important;
 }
 
@@ -1358,7 +1358,7 @@
   color: #d4e157 !important;
 }
 
-.lime.darken-1 {
+.lime.darken-1, .lime.header {
   background-color: #c0ca33 !important;
 }
 
@@ -1366,7 +1366,7 @@
   color: #c0ca33 !important;
 }
 
-.lime.darken-2, .lime.header {
+.lime.darken-2 {
   background-color: #afb42b !important;
 }
 
@@ -1430,7 +1430,7 @@
   color: #ffeb3b !important;
 }
 
-.yellow.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.yellow, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.yellow {
+.yellow.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.yellow:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.yellow:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.yellow:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.yellow:nth-child(odd) {
   background-color: #fffde7 !important;
 }
 
@@ -1446,7 +1446,7 @@
   color: #fff9c4 !important;
 }
 
-.yellow.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.yellow, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.yellow {
+.yellow.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.yellow:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.yellow:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.yellow:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.yellow:nth-child(even) {
   background-color: #fff59d !important;
 }
 
@@ -1454,7 +1454,7 @@
   color: #fff59d !important;
 }
 
-.yellow.lighten-2 {
+.yellow.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.yellow, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.yellow {
   background-color: #fff176 !important;
 }
 
@@ -1470,7 +1470,7 @@
   color: #ffee58 !important;
 }
 
-.yellow.darken-1 {
+.yellow.darken-1, .yellow.header {
   background-color: #fdd835 !important;
 }
 
@@ -1478,7 +1478,7 @@
   color: #fdd835 !important;
 }
 
-.yellow.darken-2, .yellow.header {
+.yellow.darken-2 {
   background-color: #fbc02d !important;
 }
 
@@ -1542,7 +1542,7 @@
   color: #ffc107 !important;
 }
 
-.amber.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.amber, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.amber {
+.amber.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.amber:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.amber:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.amber:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.amber:nth-child(odd) {
   background-color: #fff8e1 !important;
 }
 
@@ -1558,7 +1558,7 @@
   color: #ffecb3 !important;
 }
 
-.amber.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.amber, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.amber {
+.amber.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.amber:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.amber:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.amber:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.amber:nth-child(even) {
   background-color: #ffe082 !important;
 }
 
@@ -1566,7 +1566,7 @@
   color: #ffe082 !important;
 }
 
-.amber.lighten-2 {
+.amber.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.amber, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.amber {
   background-color: #ffd54f !important;
 }
 
@@ -1582,7 +1582,7 @@
   color: #ffca28 !important;
 }
 
-.amber.darken-1 {
+.amber.darken-1, .amber.header {
   background-color: #ffb300 !important;
 }
 
@@ -1590,7 +1590,7 @@
   color: #ffb300 !important;
 }
 
-.amber.darken-2, .amber.header {
+.amber.darken-2 {
   background-color: #ffa000 !important;
 }
 
@@ -1646,7 +1646,7 @@
   color: #ffab00 !important;
 }
 
-.orange, .header, #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div {
+.orange, .header, #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child {
   background-color: #ff9800 !important;
 }
 
@@ -1654,7 +1654,7 @@
   color: #ff9800 !important;
 }
 
-.orange.lighten-5, .lighten-5.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header, #calendar > li:nth-child(odd) > div.lighten-5:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.orange, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-5 {
+.orange.lighten-5, .lighten-5.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(odd), #calendar > li:nth-child(odd) > div.lighten-5:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.orange:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-5:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-5:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.orange:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd) {
   background-color: #fff3e0 !important;
 }
 
@@ -1662,7 +1662,7 @@
   color: #fff3e0 !important;
 }
 
-.orange.lighten-4, .lighten-4.header, #calendar > li:nth-child(odd) > div.lighten-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-4, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-4 {
+.orange.lighten-4, .lighten-4.header, #calendar > li:nth-child(odd) > div.lighten-4:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-4:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-4:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-4:first-child {
   background-color: #ffe0b2 !important;
 }
 
@@ -1670,7 +1670,7 @@
   color: #ffe0b2 !important;
 }
 
-.orange.lighten-3, .lighten-3.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header, #calendar > li:nth-child(odd) > div.lighten-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.orange, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-3, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div {
+.orange.lighten-3, .lighten-3.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(even), #calendar > li:nth-child(odd) > div.lighten-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.orange:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-3:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.orange:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even) {
   background-color: #ffcc80 !important;
 }
 
@@ -1678,7 +1678,7 @@
   color: #ffcc80 !important;
 }
 
-.orange.lighten-2, .lighten-2.header, #calendar > li:nth-child(odd) > div.lighten-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-2, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-2 {
+.orange.lighten-2, .lighten-2.header, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.header, #calendar > li:nth-child(odd) > div.lighten-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-2:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-2:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.orange, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead {
   background-color: #ffb74d !important;
 }
 
@@ -1686,7 +1686,7 @@
   color: #ffb74d !important;
 }
 
-.orange.lighten-1, .lighten-1.header, #calendar > li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div.orange:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-1, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-1 {
+.orange.lighten-1, .lighten-1.header, #calendar > li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-1:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-1:nth-child(even), #calendar > li:nth-child(even) > div.orange:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-1:first-child {
   background-color: #ffa726 !important;
 }
 
@@ -1694,7 +1694,7 @@
   color: #ffa726 !important;
 }
 
-.orange.darken-1, .darken-1.header, #calendar > li:nth-child(odd) > div.darken-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-1, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-1 {
+.orange.darken-1, .header, #calendar > li:nth-child(odd) > div.darken-1:first-child, #calendar > li:nth-child(odd) > div.header:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-1:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-1:nth-child(even), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header:first-child {
   background-color: #fb8c00 !important;
 }
 
@@ -1702,7 +1702,7 @@
   color: #fb8c00 !important;
 }
 
-.orange.darken-2, .header, #calendar > li:nth-child(odd) > div.darken-2:first-child, #calendar > li:nth-child(odd) > div.header:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-2, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-2, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header {
+.orange.darken-2, .darken-2.header, #calendar > li:nth-child(odd) > div.darken-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-2:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-2:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-2:first-child {
   background-color: #f57c00 !important;
 }
 
@@ -1710,7 +1710,7 @@
   color: #f57c00 !important;
 }
 
-.orange.darken-3, .darken-3.header, #calendar > li:nth-child(odd) > div.darken-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-3, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-3 {
+.orange.darken-3, .darken-3.header, #calendar > li:nth-child(odd) > div.darken-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-3:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-3:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-3:first-child {
   background-color: #ef6c00 !important;
 }
 
@@ -1718,7 +1718,7 @@
   color: #ef6c00 !important;
 }
 
-.orange.darken-4, body.orange, body.header, .darken-4.header, #calendar > li:nth-child(odd) > div.darken-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-4, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-4 {
+.orange.darken-4, body.orange, body.header, .darken-4.header, #calendar > li:nth-child(odd) > div.darken-4:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-4:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-4:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-4:first-child {
   background-color: #e65100 !important;
 }
 
@@ -1726,7 +1726,7 @@
   color: #e65100 !important;
 }
 
-.orange.accent-1, .accent-1.header, #calendar > li:nth-child(odd) > div.accent-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-1, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-1 {
+.orange.accent-1, .accent-1.header, #calendar > li:nth-child(odd) > div.accent-1:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.accent-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-1:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-1:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-1:first-child {
   background-color: #ffd180 !important;
 }
 
@@ -1734,7 +1734,7 @@
   color: #ffd180 !important;
 }
 
-.orange.accent-2, .accent-2.header, #calendar > li:nth-child(odd) > div.accent-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-2, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-2 {
+.orange.accent-2, .accent-2.header, #calendar > li:nth-child(odd) > div.accent-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.accent-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-2:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-2:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-2:first-child {
   background-color: #ffab40 !important;
 }
 
@@ -1742,7 +1742,7 @@
   color: #ffab40 !important;
 }
 
-.orange.accent-3, .accent-3.header, #calendar > li:nth-child(odd) > div.accent-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-3, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-3 {
+.orange.accent-3, .accent-3.header, #calendar > li:nth-child(odd) > div.accent-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.accent-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-3:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-3:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-3:first-child {
   background-color: #ff9100 !important;
 }
 
@@ -1750,7 +1750,7 @@
   color: #ff9100 !important;
 }
 
-.orange.accent-4, .accent-4.header, #calendar > li:nth-child(odd) > div.accent-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-4, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-4 {
+.orange.accent-4, .accent-4.header, #calendar > li:nth-child(odd) > div.accent-4:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.accent-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-4:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.accent-4:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.accent-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.accent-4:first-child {
   background-color: #ff6d00 !important;
 }
 
@@ -1766,7 +1766,7 @@
   color: #ff5722 !important;
 }
 
-.deep-orange.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-orange, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-orange {
+.deep-orange.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-orange:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-orange:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.deep-orange:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-orange:nth-child(odd) {
   background-color: #fbe9e7 !important;
 }
 
@@ -1782,7 +1782,7 @@
   color: #ffccbc !important;
 }
 
-.deep-orange.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-orange, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-orange {
+.deep-orange.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-orange:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-orange:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.deep-orange:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.deep-orange:nth-child(even) {
   background-color: #ffab91 !important;
 }
 
@@ -1790,7 +1790,7 @@
   color: #ffab91 !important;
 }
 
-.deep-orange.lighten-2 {
+.deep-orange.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.deep-orange, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.deep-orange {
   background-color: #ff8a65 !important;
 }
 
@@ -1806,7 +1806,7 @@
   color: #ff7043 !important;
 }
 
-.deep-orange.darken-1 {
+.deep-orange.darken-1, .deep-orange.header {
   background-color: #f4511e !important;
 }
 
@@ -1814,7 +1814,7 @@
   color: #f4511e !important;
 }
 
-.deep-orange.darken-2, .deep-orange.header {
+.deep-orange.darken-2 {
   background-color: #e64a19 !important;
 }
 
@@ -1878,7 +1878,7 @@
   color: #795548 !important;
 }
 
-.brown.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.brown, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.brown {
+.brown.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.brown:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.brown:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.brown:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.brown:nth-child(odd) {
   background-color: #efebe9 !important;
 }
 
@@ -1894,7 +1894,7 @@
   color: #d7ccc8 !important;
 }
 
-.brown.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.brown, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.brown {
+.brown.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.brown:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.brown:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.brown:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.brown:nth-child(even) {
   background-color: #bcaaa4 !important;
 }
 
@@ -1902,7 +1902,7 @@
   color: #bcaaa4 !important;
 }
 
-.brown.lighten-2 {
+.brown.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.brown, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.brown {
   background-color: #a1887f !important;
 }
 
@@ -1918,7 +1918,7 @@
   color: #8d6e63 !important;
 }
 
-.brown.darken-1 {
+.brown.darken-1, .brown.header {
   background-color: #6d4c41 !important;
 }
 
@@ -1926,7 +1926,7 @@
   color: #6d4c41 !important;
 }
 
-.brown.darken-2, .brown.header {
+.brown.darken-2 {
   background-color: #5d4037 !important;
 }
 
@@ -1950,7 +1950,7 @@
   color: #3e2723 !important;
 }
 
-.blue-grey, body, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div, #calendar > li:nth-child(even) > div:first-child {
+.blue-grey, body, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even) {
   background-color: #607d8b !important;
 }
 
@@ -1958,7 +1958,7 @@
   color: #607d8b !important;
 }
 
-.blue-grey.lighten-5, body.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-5, #calendar > li:nth-child(even) > div.lighten-5:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd):nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd):nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue-grey, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div {
+.blue-grey.lighten-5, body.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-5:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue-grey:nth-child(odd), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(even) > div.lighten-5:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd):nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd):nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.blue-grey:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-5, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-5:nth-child(even) {
   background-color: #eceff1 !important;
 }
 
@@ -1966,7 +1966,7 @@
   color: #eceff1 !important;
 }
 
-.blue-grey.lighten-4, body.lighten-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-4, #calendar > li:nth-child(even) > div.lighten-4:first-child {
+.blue-grey.lighten-4, body.lighten-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-4:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-4:first-child, #calendar > li:nth-child(even) > div.lighten-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-4, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-4:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-4:nth-child(even) {
   background-color: #cfd8dc !important;
 }
 
@@ -1974,7 +1974,7 @@
   color: #cfd8dc !important;
 }
 
-.blue-grey.lighten-3, body.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div, #calendar > li:nth-child(even) > div.lighten-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue-grey, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div {
+.blue-grey.lighten-3, body.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.blue-grey:nth-child(even), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even), #calendar > li:nth-child(even) > div.lighten-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.blue-grey:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-3, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-3:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr:nth-child(even) {
   background-color: #b0bec5 !important;
 }
 
@@ -1982,7 +1982,7 @@
   color: #b0bec5 !important;
 }
 
-.blue-grey.lighten-2, body.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-2, #calendar > li:nth-child(even) > div.lighten-2:first-child {
+.blue-grey.lighten-2, body.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.blue-grey, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(even) > div.lighten-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-2:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-2:nth-child(even) {
   background-color: #90a4ae !important;
 }
 
@@ -1990,7 +1990,7 @@
   color: #90a4ae !important;
 }
 
-.blue-grey.lighten-1, body.lighten-1, #calendar > li:nth-child(odd) > div.blue-grey:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:first-child {
+.blue-grey.lighten-1, body.lighten-1, #calendar > li:nth-child(odd) > div.blue-grey:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(odd) > div:first-child, #calendar > li:nth-child(even):nth-child(odd) > div:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.lighten-1:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.lighten-1:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.lighten-1, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-1:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.lighten-1:nth-child(even) {
   background-color: #78909c !important;
 }
 
@@ -1998,7 +1998,7 @@
   color: #78909c !important;
 }
 
-.blue-grey.darken-1, body.darken-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-1, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-1, #calendar > li:nth-child(even) > div.darken-1:first-child {
+.blue-grey.darken-1, body.darken-1, body.header, .blue-grey.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.header, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.header:nth-child(even), #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-1:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-1:first-child, #calendar > li:nth-child(even) > div.darken-1:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-1, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-1:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-1:nth-child(even) {
   background-color: #546e7a !important;
 }
 
@@ -2006,7 +2006,7 @@
   color: #546e7a !important;
 }
 
-.blue-grey.darken-2, body.darken-2, body.header, .blue-grey.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.header, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.header, #calendar > li:nth-child(even) > div.header:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-2, #calendar > li:nth-child(even) > div.darken-2:first-child {
+.blue-grey.darken-2, body.darken-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-2:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-2:first-child, #calendar > li:nth-child(even) > div.darken-2:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-2, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-2:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-2:nth-child(even) {
   background-color: #455a64 !important;
 }
 
@@ -2014,7 +2014,7 @@
   color: #455a64 !important;
 }
 
-.blue-grey.darken-3, body.darken-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-3, #calendar > li:nth-child(even) > div.darken-3:first-child {
+.blue-grey.darken-3, body.darken-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-3:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-3:first-child, #calendar > li:nth-child(even) > div.darken-3:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-3, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-3:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-3:nth-child(even) {
   background-color: #37474f !important;
 }
 
@@ -2022,7 +2022,7 @@
   color: #37474f !important;
 }
 
-.blue-grey.darken-4, body, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-4, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-4, #calendar > li:nth-child(even) > div.darken-4:first-child {
+.blue-grey.darken-4, body, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.darken-4:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.darken-4:first-child, #calendar > li:nth-child(even) > div.darken-4:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.darken-4, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-4:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.darken-4:nth-child(even) {
   background-color: #263238 !important;
 }
 
@@ -2038,7 +2038,7 @@
   color: #9e9e9e !important;
 }
 
-.grey.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.grey, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.grey {
+.grey.lighten-5, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.grey:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.grey:nth-child(odd), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(odd) > div.grey:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.grey:nth-child(odd) {
   background-color: #fafafa !important;
 }
 
@@ -2054,7 +2054,7 @@
   color: #f5f5f5 !important;
 }
 
-.grey.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.grey, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.grey {
+.grey.lighten-3, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li:nth-child(even) > div.grey:first-child, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.grey:nth-child(even), #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li:nth-child(even) > div.grey:first-child, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody > tr.grey:nth-child(even) {
   background-color: #eeeeee !important;
 }
 
@@ -2062,7 +2062,7 @@
   color: #eeeeee !important;
 }
 
-.grey.lighten-2 {
+.grey.lighten-2, #calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.grey, #calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > thead.grey {
   background-color: #e0e0e0 !important;
 }
 
@@ -2078,7 +2078,7 @@
   color: #bdbdbd !important;
 }
 
-.grey.darken-1 {
+.grey.darken-1, .grey.header {
   background-color: #757575 !important;
 }
 
@@ -2086,7 +2086,7 @@
   color: #757575 !important;
 }
 
-.grey.darken-2, .grey.header {
+.grey.darken-2 {
   background-color: #616161 !important;
 }
 
@@ -9018,8 +9018,44 @@ input[type=range]::-ms-thumb {
 
 /* Calendar Elements */
 /* Odd Year Elements*/
+#calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul {
+  /*odd month container headers*/
+  /*even month container headers*/
+  /*month container bodys*/
+}
+
+#calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) {
+  /*month table header*/
+  /*month table body */
+}
+
+#calendar > li:nth-child(odd) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody {
+  /*odd transactions*/
+  /*even transactions*/
+}
+
 /* Event Year Elements*/
+#calendar > li:nth-child(even) > div:nth-child(2) > .row > ul {
+  /*odd month container headers*/
+  /*even month container headers*/
+  /*month container bodys*/
+}
+
+#calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) {
+  /*month table header*/
+  /*month table body */
+}
+
+#calendar > li:nth-child(even) > div:nth-child(2) > .row > ul li > div:nth-child(2) > table > tbody {
+  /*odd transactions*/
+  /*even transactions*/
+}
+
 /* Other tweaks */
+table {
+  margin: 0 !important;
+}
+
 .currency {
   position: absolute;
   top: 11px;
